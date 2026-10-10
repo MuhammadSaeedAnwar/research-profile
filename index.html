@@ -49,7 +49,6 @@
 
   .wrap{ max-width: 920px; margin: 0 auto; padding: 0 28px; }
 
-  /* NAV */
   nav{
     position: sticky; top:0; z-index: 50;
     background: rgba(227,230,222,0.92);
@@ -65,38 +64,37 @@
 
   section[id]{ scroll-margin-top: 70px; }
 
-  /* HERO */
   header.hero{ padding: 88px 0 56px; border-bottom: 1px solid var(--line); }
-  .hero-top{ display:flex; gap: 40px; align-items: flex-start; justify-content: space-between; }
-  .hero-text{ flex: 1; min-width: 0; }
+  .hero-top{ display:flex; gap:40px; align-items:flex-start; justify-content:space-between; }
+  .hero-text{ flex:1; min-width:0; }
   .hero-portrait{
-    flex-shrink: 0;
-    width: 148px;
-    height: 148px;
-    border-radius: var(--radius);
-    border: 1px solid var(--ink);
-    overflow: hidden;
-    background: var(--paper-raised);
-    position: relative;
+    flex-shrink:0;
+    width:148px;
+    height:148px;
+    border-radius:var(--radius);
+    border:1px solid var(--ink);
+    overflow:hidden;
+    background:var(--paper-raised);
+    position:relative;
   }
   .hero-portrait img{
-    width: 100%; height: 100%; object-fit: cover; display:block;
-    filter: saturate(0.85) sepia(0.06) contrast(1.03);
+    width:100%; height:100%; object-fit:cover; display:block;
+    filter:saturate(.85) sepia(.06) contrast(1.03);
   }
   .hero-portrait::after{
     content:"";
     position:absolute; inset:0;
-    border: 1px solid rgba(22,33,28,0.08);
-    box-shadow: inset 0 0 0 5px var(--paper);
-    pointer-events: none;
+    border:1px solid rgba(22,33,28,.08);
+    box-shadow:inset 0 0 0 5px var(--paper);
+    pointer-events:none;
   }
   .portrait-tag{
-    margin-top: 10px;
-    font-family:'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.06em;
-    color: var(--ink-soft);
-    text-align: center;
+    margin-top:10px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+    text-align:center;
   }
   .stamp{
     display:inline-flex; align-items:center; gap:8px;
@@ -124,7 +122,6 @@
   }
   .hero-meta a:hover{ color: var(--ink); text-decoration: underline; }
 
-  /* SECTION SHELL */
   section{ padding: 64px 0; border-bottom: 1px solid var(--line); }
   section:last-of-type{ border-bottom:none; }
   .eyebrow{
@@ -138,7 +135,6 @@
   .abstract{ max-width: 68ch; font-size: 16px; color: var(--ink-soft); }
   .abstract strong{ color: var(--ink); font-weight: 600; }
 
-  /* FINDINGS (research/projects) */
   .finding{
     background: var(--paper-raised);
     border: 1px solid var(--line);
@@ -165,7 +161,6 @@
   }
   .finding-links a:hover{ color: var(--red); border-color: var(--red); }
 
-  /* LOG (experience) */
   .log-entry{ display:grid; grid-template-columns: 150px 1fr; gap: 18px; padding: 18px 0; border-top: 1px solid var(--line); }
   .log-entry:first-child{ border-top: none; }
   .log-date{ font-family:'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-soft); padding-top: 2px; }
@@ -173,20 +168,17 @@
   .log-role{ font-family:'IBM Plex Mono', monospace; font-size: 12px; color: var(--amber); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
   .log-entry p{ margin: 0; font-size: 14.5px; color: var(--ink-soft); max-width: 62ch; }
 
-  /* MATRIX (skills) */
   .matrix{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow:hidden; }
   .matrix-cell{ background: var(--paper-raised); padding: 20px 22px; }
   .matrix-cell h4{ font-family:'IBM Plex Mono', monospace; font-size: 12px; letter-spacing:0.08em; text-transform:uppercase; color: var(--amber); margin: 0 0 10px; }
   .matrix-cell p{ margin:0; font-size: 14px; color: var(--ink-soft); line-height:1.7; }
 
-  /* CERTS */
   .cert-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 14px; }
   .cert{ border:1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; background: var(--paper-raised); font-size: 13.5px; }
   .cert-issuer{ font-family:'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-soft); text-transform:uppercase; letter-spacing:0.06em; margin-bottom: 4px; }
   .cert a{ font-size: 12px; color: var(--red); text-decoration:none; font-family:'IBM Plex Mono', monospace; }
   .cert a:hover{ text-decoration: underline; }
 
-  /* DISCLOSURE / CONTACT */
   .disclosure{ background: var(--ink); color: var(--paper); border-radius: var(--radius); padding: 44px 36px; }
   .disclosure .eyebrow{ color: #E0A85A; }
   .disclosure .eyebrow::after{ background: #3A473F; }
@@ -267,7 +259,7 @@
       </div>
       <div>
         <div class="hero-portrait">
-          <img src="https://avatars.githubusercontent.com/u/115099496?v=4" alt="Muhammad Saeed Anwar" referrerpolicy="no-referrer" onerror="this.src='https://github.com/MuhammadSaeedAnwar.png';" />
+          <img src="https://github.com/MuhammadSaeedAnwar.png" alt="Muhammad Saeed Anwar" referrerpolicy="no-referrer" onerror="this.src='https://avatars.githubusercontent.com/u/115099496?v=4';" />
         </div>
         <div class="portrait-tag">SUBJECT // MSA</div>
       </div>
